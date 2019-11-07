@@ -8,7 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-nav {
+.left {
   position: fixed;
   left: calc((100vw - 600px) / 2);
   transform: translateX(-100%);
@@ -20,14 +20,19 @@ nav ul li {
   font-size: 20px;
   margin-bottom: 32px;
   display: flex;
-  align-items: left;
-  width: 200px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50px;
+  padding: 15px;
+
 }
 
 .nav__icon {
   width: 28px;
   height: 28px;
   background: #000;
+  display: inline-block;
+  margin: 10px;
+  vertical-align: top;
 }
 
 .nav__icon--home {
@@ -58,6 +63,23 @@ nav ul li:hover {
 nav ul li:hover .nav__icon--home:hover .nav__icon--bell:hover {
   background: #0038FF;
   cursor: pointer;
+}
+
+.speakout {
+  background: #0038FF;
+  text-decoration: none;
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.right {
+  position: fixed;
+  right: calc((100vw - 600px) / 2);
+  transform: translateX(100%);
+  padding: 24px 32px 0 0;
+  text-align: right;
 }
 
 /* MAIN */
