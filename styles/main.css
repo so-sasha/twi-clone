@@ -265,13 +265,17 @@ aside ul li:last-child {
   position: absolute;
   right: calc((100vw - 600px) / 2);
   transform: translateX(100%);
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  width: 480px;
 }
 
-.messages h2 {
+.messages__header {
   display: flex;
   justify-content: space-between;
   padding: 16px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  width: 480px;
 }
 
 .messages__header a,
@@ -281,23 +285,61 @@ aside ul li:last-child {
 }
 
 .messages_date {
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  position: absolute;
+  width: 123px;
+  height: 16px;
+  left: 400px;
+  top: 216px;
 }
 
-.blue_message {
+.messages_date_2 {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  position: absolute;
+  width: 123px;
+  height: 16px;
+  left: 200px;
+  top: 504px;
+}
+
+.blue_message_box {
   background: #0038FF;
   border-radius: 50px 50px 0 50px;
   padding: 15px;
   color: #ffffff;
   width: 349px;
+  line-height: 24px;
+  position: absolute;
+  width: 317px;
+  height: 48px;
+  left: 120px;
+  top: 152px;
 }
 
-.gray_message {
+.gray_message_box {
   background: rgba(0, 0, 0, 0.05);
   border-radius: 50px 50px 50px 0;
   padding: 15px;
+  line-height: 24px;
+  position: absolute;
   width: 349px;
+  height: 248px;
+  left: 60px;
+  top: 256px;
+}
+
+.story__user-ava_messages {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 10px;
+  top: 470px;
+}
+
+.enter_message {
+  color: rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width: 768px) query {
