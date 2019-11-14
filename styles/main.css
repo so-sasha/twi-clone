@@ -262,7 +262,42 @@ aside ul li:last-child {
 }
 
 .messages {
+  position: absolute;
+  right: calc((100vw - 600px) / 2);
+  transform: translateX(100%);
+}
 
+.messages h2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.messages__header a,
+.messages__header span {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+
+.messages_date {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+
+.blue_message {
+  background: #0038FF;
+  border-radius: 50px 50px 0 50px;
+  padding: 15px;
+  color: #ffffff;
+  width: 349px;
+}
+
+.gray_message {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50px 50px 50px 0;
+  padding: 15px;
+  width: 349px;
 }
 
 @media (max-width: 768px) query {
