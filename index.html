@@ -5,34 +5,35 @@
     <meta charset="utf-8">
     <title>ТвиТеллер</title>
     <link rel="stylesheet" href="styles/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
 
     <nav class="left">
       <ul>
 
-        <li>
+        <li class="left_list">
           <div class="nav__icon nav__icon--home">
             <img src="img/home-icn.svg" alt="Главная">
           </div>
           Главная
         </li>
 
-        <li>
+        <li class="left_list">
           <div class="nav__icon nav__icon--bell">
             <img src="img/bell-icn.svg" alt="Уведомления">
           </div>
             Уведомления
         </li>
 
-        <li>
+        <li class="left_list">
           <div class="nav__icon nav__icon--chat">
           <img src="img/chat-icn.svg" alt="Сообщения">
           </div>
           Сообщения
         </li>
 
-        <li>
+        <li class="left_list">
           <div class="nav__icon nav__icon--bookmark">
           <img src="img/bookmark-icn.svg" alt="Закладки">
           </div>
@@ -42,17 +43,56 @@
       <a class="speakout" href="#">Высказаться</a>
     </nav>
 
-    <nav class="right">
-      <h2>Ваши друзья</h2>
-      <ul>
-        <header class="story__body__header">
-          <h3>Катерина Кацман</h3>
-          <a href="#">@katya-k</a>
-        </header>
-
-      </ul>
-    </nav>
-
+    <aside>
+    <ul>
+      <li>Ваши друзья</li>
+      <li class="aside__user">
+        <img src="img/ava-katya.png" alt="Картинка пользователя">
+        <div class="aside__user__info">
+          <div class="aside__user__info__name">
+            Катерина Кацман
+          </div>
+          <a class="aside__user__info__nick" href="#">
+            @katya-k
+          </a>
+        </div>
+      </li>
+      <li class="aside__user">
+        <img src="img/ava-inna.png" alt="Картинка пользователя">
+        <div class="aside__user__info">
+          <div class="aside__user__info__name">
+            Инна Берг
+          </div>
+          <a class="aside__user__info__nick" href="#">
+            @inna-b
+          </a>
+        </div>
+      </li>
+      <li class="aside__user">
+        <img src="img/ava-dale.png" alt="Картинка пользователя">
+        <div class="aside__user__info">
+          <div class="aside__user__info__name">
+            Агент Д
+          </div>
+          <a class="aside__user__info__nick" href="#">
+            @win-twin
+          </a>
+        </div>
+      </li>
+      <li class="aside__user">
+        <img src="img/ava-platon.png" alt="Картинка пользователя">
+        <div class="aside__user__info">
+          <div class="aside__user__info__name">
+            Человек в облаках
+          </div>
+          <a class="aside__user__info__nick" href="#">
+            @ilovesocrates
+          </a>
+        </div>
+      </li>
+      <li>Показать еще</li>
+    </ul>
+  </aside>
 
     <main>
 
